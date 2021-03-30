@@ -5,7 +5,7 @@ class Counter extends Component {
         tags: []
     };
     handleIncrement=()=>{
-        console.log("incremented", this);
+        this.setState({count: this.state.count+1});
     }
     render() { 
         return(
